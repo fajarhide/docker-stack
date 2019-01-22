@@ -1,6 +1,5 @@
 # docker-stack
-Dockerstack RCL
-
+Dockerstack RCL lightweight images
 
 ## Beanstalkd :
 ```sh
