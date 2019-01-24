@@ -16,3 +16,10 @@ $ cd docker-stack/mysql/
 $ mkdir data
 $ docker-compose up -d
 ```
+
+## Nginx-PHP-Phalcon
+Edit enviroment `Project Name`,`port` on `.env`
+```sh
+$ cd docker-stack/nginx-php-phalcon/
+$ ./build.sh
+```
