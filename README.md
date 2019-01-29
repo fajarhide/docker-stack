@@ -23,3 +23,15 @@ Edit enviroment `Project Name`,`port` on `.env`
 $ cd docker-stack/nginx-php-phalcon/
 $ ./build.sh
 ```
+### Laravel
+```sh
+$ docker exec -it project-name sh -c "php artisan key:generate"
+```
+
+## Golang
+```sh
+$ cd docker-stack/golang/
+$ CGO_ENABLED=0 GOOS=linux go build -a -o app .
+$ docker build . -t name-project
+$ docker run -it --name name-project -p 9000:8000 -d name-project
+```
