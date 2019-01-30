@@ -35,3 +35,10 @@ $ CGO_ENABLED=0 GOOS=linux go build -a -o app .
 $ docker build . -t name-project
 $ docker run -it --name name-project -p 9000:8000 -d name-project
 ```
+
+## Redis
+```sh
+$ cd docker-stack/redis/
+$ mkdir data
+$ docker-compose up -d
+```

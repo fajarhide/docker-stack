@@ -1,0 +1,12 @@
+version: '3'
+services:
+    redisdb:
+        image: redis:${redis_VERSION}
+        container_name: ${redis_HOST}
+        restart: always
+        env_file:
+            - ".env"
+        ports:
+            - "6379:6379"
+        volumes:
+            - "./data:/data"
