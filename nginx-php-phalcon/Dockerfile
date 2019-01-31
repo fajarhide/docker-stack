@@ -60,7 +60,7 @@ RUN mkdir -p /var/run/supervisor
 RUN mkdir -p /var/run/php-fpm
 RUN mkdir -p /run/nginx
 
-COPY tms-api /var/www/html/
+COPY project /var/www/html/
 
 RUN chown -Rf devteam.devteam /var/www/html/
 
