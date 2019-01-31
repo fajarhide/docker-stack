@@ -20,7 +20,7 @@ RUN set -xe && \
 
 # install another packages
 RUN apk --no-cache add \
-  php7-devel \
+  php7-dev \
   git \
   supervisor \
   libpng \
