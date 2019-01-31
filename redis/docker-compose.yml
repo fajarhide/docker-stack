@@ -1,12 +1,13 @@
 version: '3'
 services:
     redisdb:
-        image: redis:${redis_VERSION}
-        container_name: ${redis_HOST}
+        image: redis:${redis_version}
+        container_name: ${redis_host}
+        command: redis-server --requirepass ${redis_password}
         restart: always
         env_file:
             - ".env"
         ports:
-            - "6379:6379"
+            - "${redis_port}:6379"
         volumes:
             - "./data:/data"
