@@ -42,3 +42,9 @@ $ cd docker-stack/redis/
 $ mkdir data
 $ docker-compose up -d
 ```
+
+## Rabbitmq
+```sh
+$ cd docker-stack/rabbitmq/
+$ docker-compose up -d
+```
